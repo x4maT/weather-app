@@ -1,8 +1,12 @@
 import { ENGLISH, UKRAINE } from './locales';
 
 const translations = {
-  [ENGLISH]: {},
-  [UKRAINE]: {},
+  [ENGLISH]: {
+    projectTitle: 'Weather',
+  },
+  [UKRAINE]: {
+    projectTitle: 'Погода',
+  },
 };
 
 export default translations;
