@@ -47,9 +47,12 @@ module.exports = {
     ],
     'no-param-reassign': [
       'error',
-      { props: true, ignorePropertyModificationsFor: ['state'] },
+      {
+        props: true,
+        ignorePropertyModificationsFor: ['state', 'config', 'messages'],
+      },
     ],
-    // 'import/prefer-default-export': 'off',
-    // 'import/no-default-export': 'error',
+    'import/prefer-default-export': 'off',
+    'no-bitwise': ['error', { allow: ['~'] }],
   },
 };
