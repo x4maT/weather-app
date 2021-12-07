@@ -1,11 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { ENGLISH } from '../../i18n/locales';
+import { UKRAINE } from '../../i18n/locales';
 
 export const commonSlice = createSlice({
   name: 'common',
   initialState: {
     isLoading: false,
-    locale: ENGLISH,
+    locale: UKRAINE,
+    error: null,
   },
   reducers: {
     setLoading: (state, { payload }) => {
@@ -14,9 +15,16 @@ export const commonSlice = createSlice({
     setLocale: (state, { payload }) => {
       state.locale = payload;
     },
+    setError: (state, { payload }) => {
+      state.error = payload;
+    },
+    removeError: (state) => {
+      state.error = null;
+    },
   },
 });
 
-export const { setLoading, setLocale, setError } = commonSlice.actions;
+export const { setLoading, setLocale, setError, removeError } =
+  commonSlice.actions;
 
 export default commonSlice.reducer;
