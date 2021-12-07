@@ -1,0 +1,2 @@
+export const GET_BY_GEO_LOCATION = 'GET_BY_GEO_LOCATION';
+export const GET_BY_CITY_NAME = 'GET_BY_CITY_NAME';
