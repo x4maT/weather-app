@@ -91,9 +91,7 @@ const InfoCard = ({ weatherData }) => {
           <h1 className="font-bold underline text-2xl text-blue-800 inline-block m-2">
             <FormattedMessage id={cityName} />
           </h1>
-          <span>
-            {`(${country})`}-{id}
-          </span>
+          <span>{`(${country})`}</span>
         </div>
 
         <div className="flex w-full justify-between px-5 text-xs">
